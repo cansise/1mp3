@@ -1,3 +1,106 @@
+body {
+    margin: 0;
+}
+
 h1 {
-    color: blueviolet;
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 90px;
+}
+
+h2 {
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 90px;
+}
+
+h3 {
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.logo-meta{
+    width: 50px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.aling-center {
+    text-align: center;
+}
+
+
+/*/header/*/
+
+header {
+    background-color: rgb(0, 255, 0);
+    padding: 10px;
+}
+
+/*/Section/*/
+
+.count  /*/compte a remourb/*/
+{
+  line-height: 100px;
+  color:rgb(255, 0, 127);
+  margin-left:30px;
+  font-family: "forma-djr-banner", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 90px;
+}
+
+.titre-conteur {
+    color: rgb(255, 0, 127);
+}
+
+
+/*/Section/*/
+.titre-select-1 {
+    color: rgb(0, 0, 255);
+}
+
+.img-alan {
+    width: 50%;
+}
+
+.buton {
+   width: 20%;
+}
+
+/*/Section/*/
+.titre-select-2 {
+    color: rgb(255, 0, 127);
+}
+
+.img-alice {
+    width: 50%;
+}
+
+.fond-jaune {
+    background-color: rgb(255, 255, 0);
+}
+
+/*/selection/*/
+
+.data-max {
+    margin: 30px;
+}
+
+/*/footer/*/
+
+footer {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
 }

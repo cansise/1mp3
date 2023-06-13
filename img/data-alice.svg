@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.54 498.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: lime;
+      }
+
+      .cls-2 {
+        fill: blue;
+      }
+
+      .cls-3 {
+        fill: #ff007f;
+      }
+
+      .cls-4 {
+        font-size: 73.39px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+        font-family: FormaDJRBanner-Black, 'Forma DJR Banner';
+        font-weight: 800;
+      }
+
+      .cls-5 {
+        font-size: 61.76px;
+      }
+
+      .cls-6 {
+        font-size: 48.59px;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M407.85,236.18l-88.89,97.17,124.28-31.17,55.42,55.73,9.16-68.53c60.17-14.13,61.9-13.12,60.17-14.13-3.46-2.02-54.89-27.64-54.89-27.64l55.45-65.71-92.98,21.14,4.33-66.84-45.39,45.68-73.97-19.81,47.33,74.11Z"/>
+  <polygon class="cls-3" points="356.16 236.53 257.86 231.53 297.99 321.41 217.99 264.06 203.16 361.36 166.87 269.87 101.79 343.71 120.73 247.12 26.05 274.05 94.2 203.03 0 174.5 95.73 151.6 31.9 76.67 124.81 109.16 111.63 11.62 172.23 89.19 213.87 0 222.91 98.01 306.16 45.5 260.78 132.84 359.21 133.67 273.81 182.62 356.16 236.53"/>
+  <polygon class="cls-1" points="314.33 377.84 381.76 350.89 397.49 466.22 340.6 498.77 304.63 462.13 254.43 427.04 269.65 362.29 314.33 377.84"/>
+  <text class="cls-6" transform="translate(424.99 269.03)"><tspan class="cls-7" x="0" y="0">7</tspan><tspan x="25.17" y="0">%</tspan></text>
+  <text class="cls-4" transform="translate(130.25 215.05)"><tspan x="0" y="0">9%</tspan></text>
+  <text class="cls-5" transform="translate(285.58 448.48)"><tspan x="0" y="0">5%</tspan></text>
+</svg>
