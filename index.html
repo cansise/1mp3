@@ -6,71 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/spz0plq.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 
-<header class="d-flex">
+<header class="d-flex space-aroud">
         <img class="logo-meta" src="img/logo-meta.svg" alt="">
-        <a href="#signalement">Signalement</a>
-        <a href="">Google trend</a>
-        <a href="">Sensibilisation</a>
-        <a href="">Contenu suprimé</a>
+        <a class="a" href="#signalement">Signalement</a>
+        <a class="a" href="#googletrend">Google trend</a>
+        <a class="a" href="#sensibilisation">Sensibilisation</a>
+        <a class="a" href="#contenusuprime">Contenu suprimé</a>
 </header>
 
-<section>
-
+<section class="titre-77">
+    
     <div class="d-flex">
-        <h1>Le</h1>
-        <div><span class="count">77</span></div>
+        <h1>Le cyberharcelement</h1>
         <h2 class="titre-conteur">%</h2>
     </div>
-    <h2>cyberharcelement</h2>
-    
 
 </section>
 
 <main>
 
     <section>
-        <h2 id="signalement" class="titre-select-1 aling-center">Signalement raciste</h2>
-        <div class="d-flex">
+        <h2 id="signalement" class="titre-alan aling-center">Signalement raciste</h2>
+        <div class="d-flex space-aroud items-center">
             <img class="img-alan" src="img/data-alan.svg" alt="">
-            <img class="buton" src="img/buton.svg" alt="">
+            <a class="button" href="">
+                En savoir plus
+                <img class="button-img" src="img/etiquette-bouton.svg" alt="">
+            </a>
         </div>    
     </section>
 
     <section>
         <img src="img/fond-jaune.svg" alt="">
         <div class="fond-jaune">
-            <h2 class="titre-select-2 aling-center">Google trend</h2>
-            <!--mettre le graphique js-->
-            <h2 class="titre-select-2 aling-center">Sensibilisation</h2>
-            <div>
-                <img class="buton" src="img/buton.svg" alt="">
+            <h2 id="googletrend" class="titre-select-2 aling-center margin-moins">Google trend</h2>
+            <div class="data-candice center">
+                <canvas id="data-candice"></canvas>
+            </div>            
+            <h2 id="sensibilisation" class="titre-select-2 aling-center">Sensibilisation</h2>
+            <div class="d-flex items-center space-aroud">
+                <a class="button" href="">
+                    En savoir plus
+                    <img class="button-img" src="img/etiquette-bouton.svg" alt="">
+                </a>
                 <img class="img-alice" src="img/data-alice.svg" alt="">
             </div>
         </div>
     </section>
 
     <section class="data-max">
+        <h2 id="contenusuprime" class="titre-max aling-center">Contenu suprimé</h2>
         <img src="img/data-max.svg" alt="">
     </section>
 
 </main>
     
-<footer class="d-flex">
-    <div class="d-flex">
+<footer class="d-flex space-between">
+    <div class="d-flex items-center">
         <img class="logo-meta" src="img/logo-meta-blanc.svg" alt="">
-        <a href="">source</a>
+        <a class="texte-footer a" href="">Source</a>
     </div>
     <div class="d-flex">
-        <p>Max - Alice - Alan - Candicee</p>
-        <p>Micro-project 3-1</p>
+        <p class="texte-footer">Max - Alice - Alan - Candice    Micro-project 3-1 </p>
     </div>
 </footer>
 
+
+<script src="js/app.js"></script>
+<script src="js/data.js"></script>
 </body>
 </html>
 
-<link rel="stylesheet" href="app.js">
