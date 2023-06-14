@@ -21,11 +21,26 @@
 </header>
 
 <section class="titre-77">
+
+<div class="container">
+
+    <img src="img/fond-header.svg" alt="">
+
+    <div class="aling-center text-overlay">
+        <h1 class="titre-header">Le cyberharcelement</h1>
+
+        <div class="d-flex justify-center items-center">
+            <div>
+                <span class="count">77</span>
+            </div>
     
-    <div class="d-flex">
-        <h1>Le cyberharcelement</h1>
-        <h2 class="titre-conteur">%</h2>
+            <h2 class="titre-conteur">%</h2>
+            <p class="p-conteur">Des jeunes adultes ne considère pas le <br> cyber-harcelement comme acceptable.*</p>
+        </div>
+        
+
     </div>
+</div>
 
 </section>
 
@@ -35,10 +50,19 @@
         <h2 id="signalement" class="titre-alan aling-center">Signalement raciste</h2>
         <div class="d-flex space-aroud items-center">
             <img class="img-alan" src="img/data-alan.svg" alt="">
-            <a class="button" href="">
+            <button onclick="openPopup()" class="button" href="">
                 En savoir plus
                 <img class="button-img" src="img/etiquette-bouton.svg" alt="">
-            </a>
+            </button>
+
+          <div class="popup-container">
+              <div class="popup-content">
+                <p class="italic">Le graphique représente les signalements en ligne liés à la xénophobie et aux discriminations en France de 2014 à 2020, chaque étoile représentant une centaine de signalements.
+                ©Pharos</p>
+                <button class="button" onclick="closePopup()">Fermer </button>
+              </div>
+            </div>
+
         </div>    
     </section>
 
@@ -50,11 +74,21 @@
                 <canvas id="data-candice"></canvas>
             </div>            
             <h2 id="sensibilisation" class="titre-select-2 aling-center">Sensibilisation</h2>
+            
             <div class="d-flex items-center space-aroud">
-                <a class="button" href="">
+                <button onclick="openPopup()" class="button" href="">
                     En savoir plus
                     <img class="button-img" src="img/etiquette-bouton.svg" alt="">
-                </a>
+                </button>
+    
+              <div id="alice" class="popup-container">
+                  <div id="alice" class="popup-content">
+                    <p class="italic">Le graphique représente les signalements en ligne liés à la xénophobie et aux discriminations en France de 2014 à 2020, chaque étoile représentant une centaine de signalements.
+                    ©Pharos</p>
+                    <button class="button" onclick="closePopup()">Fermer </button>
+                  </div>
+                </div>
+
                 <img class="img-alice" src="img/data-alice.svg" alt="">
             </div>
         </div>

@@ -29,6 +29,12 @@ p {
     font-style: normal;
 }
 
+.italic {
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
 .logo-meta{
     width: 50px;
     margin-right: 15px;
@@ -46,6 +52,10 @@ p {
     justify-content: space-around;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -54,12 +64,67 @@ p {
     align-items: center;
 }
 
+.items-baseline {
+    align-items: baseline;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
     width: 80%; /* largeur obligatoire pour être centré */
 }
 
+/*/Pop Up alan/*/
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    background-image: url(../img/pop-up-bleu.svg);
+    background-repeat: no-repeat;
+    width: 437.8114px;
+    height: 567.8543px;
+
+   
+  }
+  
+  .popup-content {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 60px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+  
+  .popup-container.active {
+    display: block;
+  }
+
+  /*/Pop Up alice/*/
+.popupcontaineralice{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    background-image: url(../img/pop-up-rose.svg);
+    background-repeat: no-repeat;
+    width: 437.8114px;
+    height: 567.8543px;
+
+   
+  }
+  
+  .popupcontentalice {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 60px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
 /*/Buton/*/
 
 .button {
@@ -84,6 +149,20 @@ p {
     height: 50px;
   }
 
+  .button-jaune {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 0) ;
+    border: none;
+    border-radius: 50px;
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+  }
+
 /*/header/*/
 
 header {
@@ -100,6 +179,31 @@ header {
     font-size: 30px;
 }
 
+/*/compte-a-rebourt/*/
+
+.count
+{
+  color: rgb(255, 0, 127);
+  font-family: "forma-djr-banner", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 110px;
+  
+}
+
+.titre-conteur {
+    color: rgb(255, 0, 127);
+    margin: 0;
+    font-size: 110px;
+    margin-left: 5px;
+}
+
+.p-conteur {
+    font-size: 40px;
+    margin: 0;
+    margin-left: 20px;
+}
+
 /*/Section/*/
 
 .titre-77 {
@@ -110,24 +214,27 @@ header {
     width: 100%;
 }
 
-/*/test
-.count  /*/compte a remourb/*/
-{
-  line-height: 100px;
-  color:rgb(255, 0, 127);
-  margin-left:30px;
-  font-family: "forma-djr-banner", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 90px;
+.titre-header {
+    margin: 0;
+    font-size: 130px;
 }
 
-.titre-conteur {
-    color: rgb(255, 0, 127);
-} /*/
-
+.container {
+    position: relative;
+    background-position: center;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
 
 /*/Section/*/
+
 .titre-alan {
     color: blue;
 }
@@ -183,4 +290,26 @@ footer {
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
+}
+
+
+/*/Media querise/*/
+
+@media screen and (max-width: 800px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size:30px;
+    }
+
 }
