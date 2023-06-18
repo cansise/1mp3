@@ -13,21 +13,25 @@
 <body>
 
 <header class="d-flex space-aroud">
-        <img class="logo-meta" src="img/logo-meta.svg" alt="">
-        <a class="a" href="#signalement">Signalement</a>
+        <img class="logo-meta" src="img/logo-meta.svg" alt="logo meta">
+        <a class="a" href="#signalement">Signalements</a>
         <a class="a" href="#googletrend">Google trend</a>
-        <a class="a" href="#sensibilisation">Sensibilisation</a>
+        <a class="a" href="#sensibilisation">Proportion</a>
         <a class="a" href="#contenusuprime">Contenu suprimé</a>
 </header>
 
-<section class="titre-77">
+
+<main>
+
+
+<section class="titre-77 section-1">
 
 <div class="container">
 
-    <img src="img/fond-header.svg" alt="">
+    <img src="img/fond-header.svg" alt="ilustration">
 
     <div class="aling-center text-overlay">
-        <h1 class="titre-header">Le cyberharcelement</h1>
+        <h1 class="titre-header">Le cyber-harcèlement</h1>
 
         <div class="d-flex justify-center items-center">
             <div>
@@ -35,7 +39,7 @@
             </div>
     
             <h2 class="titre-conteur">%</h2>
-            <p class="p-conteur">Des jeunes adultes ne considère pas le <br> cyber-harcelement comme acceptable.*</p>
+            <p class="p-conteur">Des jeunes adultes ne considère pas le <br> cyber-harcèlement comme acceptable.*</p>
         </div>
         
 
@@ -44,22 +48,20 @@
 
 </section>
 
-<main>
-
     <section>
-        <h2 id="signalement" class="titre-alan aling-center">Signalement raciste</h2>
+        <h2 id="signalement" class="titre-alan aling-center">Signalements de <br> contenus racistes*²</h2>
         <div class="d-flex space-aroud items-center">
-            <img class="img-alan" src="img/data-alan.svg" alt="">
-            <button onclick="openPopup()" class="button" href="">
+            <img class="img-alan" src="img/data-alan.svg" alt="dataviz sur le sugnalement de contenue raciste">
+            <button onclick="openPopupalan()" class="button">
                 En savoir plus
                 <img class="button-img" src="img/etiquette-bouton.svg" alt="">
             </button>
 
-          <div class="popup-container">
+            <div id="popup-alan" class="popup-container">
               <div class="popup-content">
                 <p class="italic">Le graphique représente les signalements en ligne liés à la xénophobie et aux discriminations en France de 2014 à 2020, chaque étoile représentant une centaine de signalements.
                 ©Pharos</p>
-                <button class="button" onclick="closePopup()">Fermer </button>
+                <button class="button" onclick="closePopupalan()">Fermer </button>
               </div>
             </div>
 
@@ -69,33 +71,39 @@
     <section>
         <img src="img/fond-jaune.svg" alt="">
         <div class="fond-jaune">
-            <h2 id="googletrend" class="titre-select-2 aling-center margin-moins">Google trend</h2>
+            <h2 id="googletrend" class="titre-select-2 aling-center margin-moins">Google trend*³</h2>
+            <h3 class="sous-titre-alice 
+            aling-center">Recherches Google sur le thème du cyber-harcèlement entre 2010 et 2022</h3>
             <div class="data-candice center">
                 <canvas id="data-candice"></canvas>
             </div>            
-            <h2 id="sensibilisation" class="titre-select-2 aling-center">Sensibilisation</h2>
+            <h2 id="sensibilisation" class="titre-select-2 aling-center">Déclaration*4</h2>
+
+            <h3 class="sous-titre-alice 
+            aling-center">Pourcentage de parents qui déclarent que leur enfant déjà à été victime de cyber-harcèlement de 2011 à 2018</h3>
             
             <div class="d-flex items-center space-aroud">
-                <button onclick="openPopup()" class="button" href="">
+                <button onclick="openPopupalice()" class="button" href="">
                     En savoir plus
                     <img class="button-img" src="img/etiquette-bouton.svg" alt="">
                 </button>
     
-              <div id="alice" class="popup-container">
-                  <div id="alice" class="popup-content">
-                    <p class="italic">Le graphique représente les signalements en ligne liés à la xénophobie et aux discriminations en France de 2014 à 2020, chaque étoile représentant une centaine de signalements.
-                    ©Pharos</p>
-                    <button class="button" onclick="closePopup()">Fermer </button>
+              <div id="popup-alice" class="popup-container-alice">
+                  <div class="popup-content-alice">
+                    <p class="italic"> La hausse des déclarations est un signe positif de la prise de conscience croissante de ce problème et de la volonté de protéger nos jeunes générations des dangers en ligne
+                    ©comparitech</p>
+                    <button class="button-jaune" onclick="closePopupalice()">Fermer </button>
                   </div>
                 </div>
 
                 <img class="img-alice" src="img/data-alice.svg" alt="">
             </div>
+            <div><br><br><br></div>
         </div>
     </section>
 
     <section class="data-max">
-        <h2 id="contenusuprime" class="titre-max aling-center">Contenu suprimé</h2>
+        <h2 id="contenusuprime" class="titre-max aling-center">Contenu suprimé*5</h2>
         <img src="img/data-max.svg" alt="">
     </section>
 
@@ -104,7 +112,26 @@
 <footer class="d-flex space-between">
     <div class="d-flex items-center">
         <img class="logo-meta" src="img/logo-meta-blanc.svg" alt="">
-        <a class="texte-footer a" href="">Source</a>
+        
+        <div onclick="openPopupsource()">
+            <p class="texte-footer" href="">Source</p>
+        </div>
+        <div id="popup-source" class="popup-container-source">
+          <div class="popup-content-source">
+            <h3 class="h3-footer">Cyber-harcèlement*</h3>
+            <p class="italic p-footer">©Enquète de "Ditch the label" réalisée en 2017
+            </p>
+            <h3 class="h3-footer">Signalements de contenus racistes*²</h3>
+            <p class="italic p-footer">©Chiffres de la plateforme PHRAROS, 2014-2020</p>
+            <h3 class="h3-footer">Google trend*³</h3>
+            <p class="italic p-footer">©Données Google trend pour la france, 2010-2022</p>
+            <h3 class="h3-footer">Déclaration*4</h3>
+            <p class="italic p-footer">©Chiffres de la plateforme comparitech, 2011-2018</p>
+            <h3 class="h3-footer">Contenu suprime*5</h3>
+            <p class="italic p-footer">©Chiffres fournis pour la platforme "netecoute" pour l'année 2019</p>
+            <button class="button" onclick="closePopupsource()">Fermer </button>
+          </div>
+        </div>
     </div>
     <div class="d-flex">
         <p class="texte-footer">Max - Alice - Alan - Candice    Micro-project 3-1 </p>

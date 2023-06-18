@@ -6,7 +6,7 @@ h1 {
     font-family: "forma-djr-banner", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 90px;
+    font-size: 110px;
 }
 
 h2 {
@@ -97,13 +97,9 @@ p {
     padding-bottom: 0px;
     align-items: center;
   }
-  
-  .popup-container.active {
-    display: block;
-  }
 
   /*/Pop Up alice/*/
-.popupcontaineralice{
+.popup-container-alice{
     display: none;
     position: fixed;
     top: 20%;
@@ -116,7 +112,7 @@ p {
    
   }
   
-  .popupcontentalice {
+  .popup-content-alice {
     position: absolute;
     text-align: center;
     color: #fff;
@@ -125,7 +121,53 @@ p {
     padding-bottom: 0px;
     align-items: center;
   }
+
+  .active {
+    display: block !important; 
+  }
+
+    /*/Pop Up alice/*/
+.popup-container-source{
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    background-image: url(../img/pop-up-jaune.svg);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 80%;
+
+   
+  }
+  
+  .popup-content-source {
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding: 70px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+
+  .active {
+    display: block !important; 
+  }
+
 /*/Buton/*/
+
+.button-jaune {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 0) ;
+    border: none;
+    border-radius: 50px;
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color:rgb(255, 0, 127);
+  }
 
 .button {
     text-decoration: none;
@@ -149,19 +191,6 @@ p {
     height: 50px;
   }
 
-  .button-jaune {
-    text-decoration: none;
-    position: relative;
-    padding: 10px 20px;
-    background-color: rgb(255, 255, 0) ;
-    border: none;
-    border-radius: 50px;
-    font-family: "forma-djr-banner", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 30px;
-    color: white;
-  }
 
 /*/header/*/
 
@@ -194,7 +223,6 @@ header {
 .titre-conteur {
     color: rgb(255, 0, 127);
     margin: 0;
-    font-size: 110px;
     margin-left: 5px;
 }
 
@@ -252,6 +280,11 @@ header {
     color: rgb(255, 0, 127);
 }
 
+.sous-titre-alice {
+   color: rgb(255, 0, 127);
+   font-size: 40px;
+}
+
 .img-alice {
     width: 50%;
 }
@@ -292,6 +325,14 @@ footer {
     font-size: 30px;
 }
 
+.h3-footer {
+    font-size: 18px;
+}
+
+.p-footer {
+    font-size: 14px;
+}
+
 
 /*/Media querise/*/
 
@@ -300,16 +341,37 @@ footer {
         flex-direction: column;
     }
 
-    h1 {
-        font-size: 30px;
+    h1{
+        font-size: 30px !important;
     }
 
-    h2 {
-        font-size: 30px;
+    h1{
+        font-size: 30px !important;
     }
+
 
     h3 {
-        font-size:30px;
+        font-size:10px;
+    }
+
+    p {
+        font-size: 5px;
+    }
+
+    .button {
+        font-size: 15px;
+        margin: 5px;
+      }
+      
+      .button-img {
+        top: -15px;
+        left: -15px;
+        width: 40px;
+        height: 50px;
+      }
+
+    .section-1 {
+        display: none;
     }
 
 }
