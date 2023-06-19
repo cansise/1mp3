@@ -98,6 +98,10 @@ p {
     align-items: center;
   }
 
+  a {
+    color: black;
+  }
+
   /*/Pop Up alice/*/
 .popup-container-alice{
     display: none;
@@ -130,11 +134,12 @@ p {
 .popup-container-source{
     display: none;
     position: fixed;
+    top: 10%;
     bottom: 20%;
     background-image: url(../img/pop-up-jaune.svg);
     background-repeat: no-repeat;
     width: 40%;
-    height: 80%;
+    height: 75%;
 
    
   }
@@ -195,6 +200,10 @@ p {
 /*/header/*/
 
 header {
+    position: fixed;
+    z-index: +1;
+    width: 100%;
+    top: 0;
     background-color: rgb(0, 255, 0);
     padding: 20px;
 }
@@ -220,6 +229,7 @@ header {
   
 }
 
+
 .titre-conteur {
     color: rgb(255, 0, 127);
     margin: 0;
@@ -235,7 +245,7 @@ header {
 /*/Section/*/
 
 .titre-77 {
-    margin-top: 70px;
+    margin-top: 140px;
 }
 
 .img-77 {
@@ -337,6 +347,7 @@ footer {
 /*/Media querise/*/
 
 @media screen and (max-width: 800px) {
+
     .d-flex {
         flex-direction: column;
     }
@@ -345,33 +356,49 @@ footer {
         font-size: 30px !important;
     }
 
-    h1{
-        font-size: 30px !important;
+    h2{
+        font-size: 25px !important;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 
     h3 {
-        font-size:10px;
+        font-size:15px !important;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     p {
         font-size: 5px;
+        
     }
 
     .button {
-        font-size: 15px;
-        margin: 5px;
+        display: none;
       }
       
       .button-img {
-        top: -15px;
-        left: -15px;
-        width: 40px;
-        height: 50px;
+        display: none;
       }
 
-    .section-1 {
+    header {
+        position: relative !important;
+    }
+
+    .section-1 img {
+        display: none !important;
+    }
+
+    .text-overlay {
+        position: relative;
+    }
+
+    .titre-conteur {
         display: none;
     }
 
+    .p-conteur {
+        color: rgb(255, 0, 127);
+    }
 }
