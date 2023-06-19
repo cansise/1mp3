@@ -160,20 +160,6 @@ p {
 
 /*/Buton/*/
 
-.button-jaune {
-    text-decoration: none;
-    position: relative;
-    padding: 10px 20px;
-    background-color: rgb(255, 255, 0) ;
-    border: none;
-    border-radius: 50px;
-    font-family: "forma-djr-banner", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 30px;
-    color:rgb(255, 0, 127);
-  }
-
 .button {
     text-decoration: none;
     position: relative;
@@ -195,8 +181,6 @@ p {
     width: 80px;
     height: 50px;
   }
-
-
 /*/header/*/
 
 header {
