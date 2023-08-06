@@ -381,7 +381,16 @@ footer {
       }
 
     header {
-        position: relative !important;
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .a {
+        display: none;
+    }
+
+    .source {
+        display: none;
     }
 
     .section-1 img {
@@ -396,7 +405,17 @@ footer {
         display: none;
     }
 
+    .titre-header {
+        color: rgb(255, 0, 127);
+        font-size: 20px;
+    }
+
     .p-conteur {
         color: rgb(255, 0, 127);
+        font-size: 20px;
+    }
+
+    .texte-footer {
+        font-size: 15px;
     }
 }

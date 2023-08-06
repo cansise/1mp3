@@ -13,12 +13,14 @@
 </head>
 <body>
 
-<header class="d-flex space-aroud">
+<header>
+    <div class="class="d-flex space-aroud"">
         <img class="logo-meta" src="img/logo-meta.svg" alt="logo meta">
         <a class="a" href="#signalement">Signalements</a>
         <a class="a" href="#googletrend">Google trend</a>
         <a class="a" href="#sensibilisation">Proportion</a>
         <a class="a" href="#contenusuprime">Contenu suprimé</a>
+    </div>
 </header>
 
 
@@ -110,29 +112,34 @@
 
 </main>
     
-<footer class="d-flex space-between">
-    <div class="d-flex items-center">
-        <img class="logo-meta" src="img/logo-meta-blanc.svg" alt="">
-        
-        <div onclick="openPopupsource()">
-            <p class="texte-footer" href="">Source</p>
+<footer>
+    <div class="source">
+        <div class="class="d-flex space-between"">
+            <div class="d-flex items-center">
+                <img class="logo-meta" src="img/logo-meta-blanc.svg" alt="">
+                
+                <div onclick="openPopupsource()">
+                    <p class="texte-footer" href="">Source</p>
+                </div>
+                <div id="popup-source" class="popup-container-source">
+                  <div class="popup-content-source">
+                    <h3 class="h3-footer">Cyber-harcèlement*</h3>
+                    <p class="italic p-footer"> <a href="https://www.brandwatch.com/reports/cyberbullying-2016/">©Enquète de "Ditch the label" réalisée en 2017</a>
+                    </p>
+                    <h3 class="h3-footer">Signalements de contenus racistes*²</h3>
+                    <p class="italic p-footer"><a href="http://127.0.0.1:5500/index.html#:~:text=centaine%20de%20signalements.-,%C2%A9Pharos,-Fermer">©Chiffres de la plateforme PHRAROS, 2014-2020</a></p>
+                    <h3 class="h3-footer">Google trend*³</h3>
+                    <p class="italic p-footer"> <a href="https://trends.google.fr/trends/explore?q=cyber-harcelement&date=now%201-d&geo=FR&hl=fr">©Données Google trend pour la france, 2010-2022</a></p>
+                    <h3 class="h3-footer">Déclaration*4</h3>
+                    <p class="italic p-footer"> <a href="http://127.0.0.1:5500/index.html#:~:text=dangers%20en%20ligne-,%C2%A9comparitech,-Fermer">©Chiffres de la plateforme comparitech, 2011-2018</a></p>
+                    <h3 class="h3-footer">Contenu suprime*5</h3>
+                    <p class="italic p-footer"> <a href="https://e-enfance.org/">©Chiffres fournis pour la platforme "netecoute" pour l'année 2019</a></p>
+                    <button class="button" onclick="closePopupsource()">Fermer </button>
+                  </div>
+                </div>
         </div>
-        <div id="popup-source" class="popup-container-source">
-          <div class="popup-content-source">
-            <h3 class="h3-footer">Cyber-harcèlement*</h3>
-            <p class="italic p-footer"> <a href="https://www.brandwatch.com/reports/cyberbullying-2016/">©Enquète de "Ditch the label" réalisée en 2017</a>
-            </p>
-            <h3 class="h3-footer">Signalements de contenus racistes*²</h3>
-            <p class="italic p-footer"><a href="http://127.0.0.1:5500/index.html#:~:text=centaine%20de%20signalements.-,%C2%A9Pharos,-Fermer">©Chiffres de la plateforme PHRAROS, 2014-2020</a></p>
-            <h3 class="h3-footer">Google trend*³</h3>
-            <p class="italic p-footer"> <a href="https://trends.google.fr/trends/explore?q=cyber-harcelement&date=now%201-d&geo=FR&hl=fr">©Données Google trend pour la france, 2010-2022</a></p>
-            <h3 class="h3-footer">Déclaration*4</h3>
-            <p class="italic p-footer"> <a href="http://127.0.0.1:5500/index.html#:~:text=dangers%20en%20ligne-,%C2%A9comparitech,-Fermer">©Chiffres de la plateforme comparitech, 2011-2018</a></p>
-            <h3 class="h3-footer">Contenu suprime*5</h3>
-            <p class="italic p-footer"> <a href="https://e-enfance.org/">©Chiffres fournis pour la platforme "netecoute" pour l'année 2019</a></p>
-            <button class="button" onclick="closePopupsource()">Fermer </button>
-          </div>
-        </div>
+    </div>
+   
     </div>
     <div class="d-flex">
         <p class="texte-footer">Max - Alice - Alan - Candice    Micro-project 3-1 </p>
